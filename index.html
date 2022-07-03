@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Tailwind Starter</title>
-</head>
-<body>
-  <h1 class="text-3xl bg-cyan-300">Tailwind</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Rating Component | Frontend Mentor</title>
+  </head>
+  <body class="bg-veryDarkBlue font-sans">
+    <!-- Global Container -->
+    <div class="container mx-auto max-w-lg p-6 flex flex-col items-center justify-center min-h-screen w-full">
+      <!-- Card Container -->
+      <div class="bg-darkBlue p-8 flex flex-col rounded-xl">
+        <!-- Rating Content -->
+        <div id="rating-content" class="">
+          <div class="bg-iconBg h-10 w-10 rounded-full flex items-center justify-center mb-6">
+            <img src="images/icon-star.svg" alt="" />
+          </div>
+          <!-- Content -->
+          <h1 class="text-white text-3xl mb-4">How did we do?</h1>
+          <p class="text-mediumGrey mb-6">Please let us know how we id with your support request. All feedback is appreciated to help us improve our offering!</p>
+          <!-- Ratings -->
+          <div class="flex items-center justify-around w-full mb-6">
+            <div class="bg-iconBg h-12 w-12 rounded-full flex items-center justify-center cursor-pointer group hover:bg-lightGrey">
+              <p class="text-mediumGrey group-hover:text-white">1</p>
+            </div>
+            <div class="bg-iconBg h-12 w-12 rounded-full flex items-center justify-center cursor-pointer group hover:bg-lightGrey">
+              <p class="text-mediumGrey group-hover:text-white">2</p>
+            </div>
+            <div class="bg-iconBg h-12 w-12 rounded-full flex items-center justify-center cursor-pointer group hover:bg-lightGrey">
+              <p class="text-mediumGrey group-hover:text-white">3</p>
+            </div>
+            <div class="bg-iconBg h-12 w-12 rounded-full flex items-center justify-center cursor-pointer group hover:bg-lightGrey">
+              <p class="text-mediumGrey group-hover:text-white">4</p>
+            </div>
+            <div class="bg-iconBg h-12 w-12 rounded-full flex items-center justify-center cursor-pointer group hover:bg-lightGrey">
+              <p class="text-mediumGrey group-hover:text-white">5</p>
+            </div>
+          </div>
+          <button type="submit" class="bg-orange block w-full text-white rounded-3xl py-4 px-6 tracking-widest font-medium uppercase hover:bg-white hover:text-orange">Submit</button>
+        </div>
+        <!-- Thank you Content -->
+        <div id="thank-you-content" class="hidden flex flex-col items-center justify-center">
+          <!-- Image -->
+          <div class="mb-6">
+            <img src="images/illustration-thank-you.svg" alt="" />
+          </div>
+          <div class="bg-iconBg text-orange p-2 px-5 rounded-3xl mb-4">
+            <p>You selected <span class="rating">4</span> out of 5</p>
+          </div>
+          <h3 class="text-white text-2xl mb-3">Thank you!</h3>
+          <p class="text-center text-mediumGrey max-w-sm">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
