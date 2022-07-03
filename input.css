@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rating.selected {
+  background-color: #fb7718;
+}
+
+.rating.selected p {
+  color: #fff;
+}
